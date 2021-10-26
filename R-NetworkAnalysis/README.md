@@ -1,5 +1,4 @@
-# Covid-Analysis
-# Graph Theory on Proteins
+# Graph Theory on Network Analysis
 In this tutorial, we are going to learn how to compute some topological indices that will help us understand the "importancy" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a desconexion of components when eliminated form the network.
 
 ## Requirements
@@ -97,7 +96,7 @@ The next step is to create the Graph that we are going to analyze, after you run
     g <- graph_from_data_frame(Dat, directed = FALSE)
     autograph(g)
 
- <img src=".\media\descarga.png" style="width:400px;" /> <img src=".\media\PPI-Blank_1.png" style="width:600px;" />
+<img src=".\media\Rplot1.png" style="width:600px;" />
  
 
 Now, to obtain more information about the resulting graph, such as data that can be used to calculate some topological parameters like degree, centrality, betweenness, Pagerank, and closeness.
@@ -208,7 +207,7 @@ Let's see the behavior of all the topological index that we have
       geom_point(aes(color = variable), size=0.5)  +
       labs(title="All variables")
 
-<img src=".\media\descarga (1).png" style="width:400px;" />
+<img src=".\media\Rplot2.png" style="width:400px;" />
 
 
 
@@ -241,7 +240,7 @@ We start by creating sets with the top 50% in each index, and the look for the i
     )
 
 
-<img src=".\media\descarga (2).png" style="width:400px;" />
+<img src=".\media\Rplot3.png" style="width:400px;" />
 
 
     library(gplots)
@@ -287,7 +286,7 @@ Next we will see the size of the intersections in a bar diagram
      upset(fromExpression(input))
 
 
-<img src=".\media\descarga (3).png" style="width:400px;" />
+<img src=".\media\Rplot4.png" style="width:400px;" />
 
 ## Cut Analysis
 
