@@ -11,14 +11,15 @@
 
 The first step is installing in R the packages that are needed as well as loading their respective libraries. In order to do this, you can copy and paste the following code in R and run it.
 
-    install.packages("ggplot2")
     install.packages("igraph")
+    install.packages("ggplot2")
     install.packages("ggraph")
     install.packages("ggvenn")
     install.packages("VennDiagram")
     install.packages("gplots")
     install.packages("UpSetR")
     install.packages("tidyverse")
+    install.packages("readxl")
 
 
     library(igraph)
@@ -28,6 +29,8 @@ The first step is installing in R the packages that are needed as well as loadin
     library(VennDiagram)
     library(gplots)
     library(UpSetR)
+    library("tidyverse")
+    library(readxl)
 
 
 Now, that the libraries are loaded, we will define a multiplot function that is going to be used to visualize the network in our file.
@@ -199,7 +202,6 @@ The final table for our vertex looks like this:
 
 Let's see the behavior of all the topological index that we have
 
-    library("tidyverse")
     Vertex <- Vertex[order(Vertex$Degree, decreasing = FALSE), ]
     Vertex$N <- c(1:nrow(Vertex) )
     df <- Vertex %>%
@@ -218,15 +220,14 @@ Let's see the behavior of all the topological index that we have
 We start by creating sets with the top 50% in each index, and the look for the intersections.
 
 
-    library(ggvenn)
-     x <- list(
+      x <- list(
          Closeness = Best_Closeness, 
          Degree = Best_Degree,
          Centrality = Best_Centrality,
          Betweenness = Best_Betweenness,
          PageRank = Best_PageRank
         )
-    library(VennDiagram)
+    
      display_venn <- function(x, ...){  
       grid.newpage()
       venn_object <- venn.diagram(x, filename = NULL, ...)
@@ -246,13 +247,11 @@ We start by creating sets with the top 50% in each index, and the look for the i
 <img src=".\media\Rplot30.png" style="width:400px;" />
 
 
-    library(gplots)
     isect <- attr(venn(x, intersection=TRUE), "intersection")
 
 
 Next we will see the size of the intersections in a bar diagram
 
-    library(UpSetR)
      input <- c(
      Centrality = length(isect$Centrality),
      #  Degree =length(isect$Degree),
