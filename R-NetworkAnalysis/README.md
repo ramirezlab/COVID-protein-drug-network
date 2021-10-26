@@ -1,8 +1,9 @@
 # Graph Theory on Network Analysis
-In this tutorial, we are going to learn how to compute some topological indices that will help us understand the "importancy" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a desconexion of components when eliminated form the network.
+In this tutorial, we are going to learn how to compute some topological indices that will help us understand the "importancy" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a disconnection of components when eliminated.
 
 ## Requirements
 + R v4.1.1 or more recent.
++ Input file available in media folder: InputDPI.xlsx
 
 ## Topological Analysis
 
@@ -70,7 +71,7 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
      ###################################################################
 
 
-Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online in GitHub, which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
+Once the multiplot function is defined, we are going to upload the input file that has the proteins and the connections.
 
 
     
@@ -89,7 +90,7 @@ If you load the data correctly, the data frame looks like the following table, w
 
 
 
-The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one. As well as the same network visualized in Cytoscape fore reference.
+The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one.
 
 
     library(igraph)
@@ -240,7 +241,7 @@ We start by creating sets with the top 50% in each index, and the look for the i
     )
 
 
-<img src=".\media\Rplot3.png" style="width:400px;" />
+<img src=".\media\Rplot30.png" style="width:400px;" />
 
 
     library(gplots)
@@ -290,11 +291,9 @@ Next we will see the size of the intersections in a bar diagram
 
 ## Cut Analysis
 
-
+First we are going to generate a new variable for our data, then we are going to consider the vertex for each topological parameter.
     
     g1 <- graph_from_data_frame(Dat, directed = FALSE)
-    
-       
     Vertex <- as.data.frame(degree(g1))
     Vertex$Degree <- normalize(as.numeric(Vertex$`degree(g1)`))
     Vertex$`degree(g1)` <- NULL
@@ -303,17 +302,18 @@ Next we will see the size of the intersections in a bar diagram
     Vertex$PageRank <- normalize(page_rank(g1)$vector)
     Vertex$Closeness <- normalize(closeness(g1))
     Vertex$N <- c(1:length(Vertex$Degree))
-    
+
+We will consider the top 50% nodes for degree, centrality, betweenness and PageRank, an the top 1% for closeness given the nature of this parameter.
 
     Vertex$DegreeCat <- ifelse(Vertex$Degree < 0.5, "no", "yes")
     Vertex$CentralityCat <- ifelse(Vertex$Centrality < 0.5, "no", "yes")
     Vertex$BetweennessCat <- ifelse(Vertex$Betweenness < 0.5, "no", "yes")
     Vertex$PageRankCat <- ifelse(Vertex$PageRank < 0.5, "no", "yes")
     Vertex$ClosenessCat <- ifelse(Vertex$Closeness < 0.99, "no", "yes")
-
     Vertex1 <- Vertex
     V_Original <- Vertex
 
+Finally, this fragment of code will generate a list with the nodes that disconnect the graogh and the number of components that its elimination would generate in the newtwork. 
 
     dg <- decompose.graph(g1)
     g <- dg[[1]]
@@ -331,4 +331,4 @@ Next we will see the size of the intersections in a bar diagram
     lista
     length(lista)
 
-This reults in 240 nodes.
+This results in 240 nodes which disconnect the graph.
