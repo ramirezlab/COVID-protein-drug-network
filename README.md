@@ -29,6 +29,12 @@ Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was
  
  For all the network analysys we used Graph Theory. [Here](https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis) we report the R pipeline, which we use for all reported analyses.  This pipeline can be applied to other networks if required.
  
+### Supplementary Information
+
+- `Supplementary_Data_1.xlsx`:  The list of top 150 novel drug-target interactions predicted by DTINet, which was trained based all on drugs and targets that have at least one known interacting pair. Known drug-target pairs (corresponding to those non-zero entries in the drug-target interaction matrix) and novel predicted DTIs that share homologous proteins (with sequence identity scores >40%) with known DTIs were excluded from the list.
+- `Supplementary_Data_2.xlsx`:  The entire list of novel drug-target interactions predicted by DTINet, which was trained based on all drugs and targets that have at least one known interacting pair.
+- `Supplementary_Data_3.xlsx`:  Examples of the novel predictions which can be supported by the previous known evidence in the literature.
+
  
  ## Citation
  
@@ -46,6 +52,6 @@ Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was
       journal = {xxx}
     }
 
-# Contacts
+## Contacts
 
 If you have any questions or comments, please feel free to email David Ramirez (dramirezs[at]udec[dot]cl).
