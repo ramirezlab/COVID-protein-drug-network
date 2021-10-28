@@ -28,3 +28,25 @@ Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was
  ## Network Analysis
  
  For all the network analysys we used Graph Theory. [Here](https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis) we report the R pipeline, which we use for all reported analyses.  This pipeline can be applied to other networks if required.
+ 
+ 
+ ## Citation
+
+Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez. Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network. 
+
+@article{Alegría-Arcos202X,
+  author = {Yunan Luo and Xinbin Zhao and Jingtian Zhou and Jinglin Yang and Yanqing Zhang and Wenhua Kuang and Jian Peng and Ligong Chen and Jianyang Zeng},
+  title = {Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network. },
+  doi = {XXXXX},
+  url = {https://doi.org/XXXXX},
+  year  = {202X},
+  month = {xxx},
+  publisher = {xxx},
+  volume = {x},
+  number = {x},
+  journal = {xxx}
+}
+
+# Contacts
+
+If you have any questions or comments, please feel free to email David Ramirez (dramirezs[at]udec[dot]cl).
