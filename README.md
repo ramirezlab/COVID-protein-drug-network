@@ -12,9 +12,12 @@ To support our analysis we have reported the steps to obtain the information fro
 
 Four datasets were used to retrive the information:
     1.-
+    
     2.-
+    
     3.-
-    3.-
+    
+    4.-
     
 Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned
  
