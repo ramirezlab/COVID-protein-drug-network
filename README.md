@@ -8,5 +8,20 @@ In this work we have collected information regarding the protein-virus interacti
 ## About this repository
 To support our analysis we have reported the steps to obtain the information from Chembl databases as well as its processing. In addition you will find information about the further analysis of the networks using R.
  
+ ## Retrive Protein-Protein Interactions data
+
+Four datasets were used to retrive the information:
+    1.-
+    2.-
+    3.-
+    3.-
+    
+Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned
  
- #
+ ## Retrive Compounds and Target from Chembl related to SARS-COV-2 data.
+ 
+ 
+ 
+ ## Network Analysis
+ 
+ For all the network analysys we used Graph Theory. [Here](https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis) we report the R pipeline, which we use for all reported analyses.  This pipeline can be applied to other networks if required.
