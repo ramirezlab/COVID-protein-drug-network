@@ -31,25 +31,20 @@ Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was
  
  
  ## Citation
+ 
 
-Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez. Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network. 
-
-
-
-### Contacts
-
-    @article{Alegría-Arcos202X,
-      author = {Yunan Luo and Xinbin Zhao and Jingtian Zhou and Jinglin Yang and Yanqing Zhang and Wenhua Kuang and Jian Peng and Ligong Chen and Jianyang Zeng},
+    @article{Alegría-Arcos,
+      author = {Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez},
       title = {Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network. },
-      doi = {XXXXX},
-      url = {https://doi.org/XXXXX},
-      year  = {202X},
-      month = {xxx},
-      publisher = {xxx},
+      doi = {XX.XX/sXX-0Xx-00XX0-X},
+      url = {https://doi.org/XX},
+      year  = {20xx},
+      month = {x},
+      publisher = {xx},
       volume = {x},
       number = {x},
       journal = {xxx}
-   }
+    }
 
 # Contacts
 
