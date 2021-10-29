@@ -34,15 +34,15 @@ Four datasets were used to retrive the information:
  <div align="justify"> Secondly, a pipeline to filter drugs based on activities values  
  <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.</div>
   
- #### Addionaly, we provied raw datafiles for compounds present in ChEMBL 
+  Addionaly, we provied raw datafiles for compounds present in ChEMBL SARS-CoV-2 section.
  
  <div> <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/chembl_covid_raw.csv" target="_blank"><b>raw data</b></a>. </div>
  
- #### And, raw data about activities for each drugs:
+  And, raw data about activities for each drugs obtained after cURL queries:
  
-  <div> Ki values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
+  <div> Ki values: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
   
-  <div> IC50 values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
+  <div> IC50 values: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
   
   
  
