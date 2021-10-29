@@ -35,11 +35,15 @@ Four datasets were used to retrive the information:
  <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.</div>
   
  #### Addionaly, we provied raw datafiles for compounds present in ChEMBL 
+ 
  <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/chembl_covid_raw.csv" target="_blank"><b>raw data</b></a>. </div>
  
  #### And, raw data about activities for each drugs:
+ 
   <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
+  
   <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
+  
   
  
  ## Network Analysis
