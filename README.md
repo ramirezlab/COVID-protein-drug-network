@@ -40,9 +40,9 @@ Four datasets were used to retrive the information:
  
  #### And, raw data about activities for each drugs:
  
-  <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
+  <div Ki values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
   
-  <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
+  <div IC50 values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
   
   
  
