@@ -27,7 +27,7 @@ Four datasets were used to retrive the information:
  ## Retrieve Compounds and Target from Chembl related to SARS-COV-2 data.
  
  <div align="justify"> Data about Compounds and Targets were retrieve from ChEMBL database following the pipeline described in 
- <a https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.
+ <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.
  
  ## Network Analysis
  
