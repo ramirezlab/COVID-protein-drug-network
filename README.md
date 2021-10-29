@@ -26,18 +26,20 @@ Four datasets were used to retrive the information:
  
  ## Retrieve Compounds and Target from Chembl related to SARS-COV-2 data.
  
- ### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
+ #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
 
  <div align="justify"> Firstly, Data about Compounds and Targets were retrieve from ChEMBL database following the pipeline described in 
- <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.
+ <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.</div>
  
  <div align="justify"> Secondly, a pipeline to filter drugs based on activities values  
- <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.
+ <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.</div>
   
- Addionaly, we provied raw datafiles for compounds present in ChEMBL <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/chembl_covid_raw.csv" target="_blank"><b>raw data</b></a>.
- And, raw data about activities for each drugs:
-  <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>.
-  <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>.
+ #### Addionaly, we provied raw datafiles for compounds present in ChEMBL 
+ <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/chembl_covid_raw.csv" target="_blank"><b>raw data</b></a>. </div>
+ 
+ #### And, raw data about activities for each drugs:
+  <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>raw data Ki</b></a>. </div>
+  <div <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>raw data IC50</b></a>. </div>
   
  
  ## Network Analysis
