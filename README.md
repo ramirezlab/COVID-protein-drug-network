@@ -34,13 +34,13 @@ Four datasets were used to retrive the information:
  
  #### Addionaly, we provied raw datafiles for compounds present in ChEMBL SARS-CoV-2 section.
  
-  <div> <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/chembl_covid_raw.csv" target="_blank"><b>Raw data</b></a> </div>
+  <div> <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/chembl_covid_raw.csv" target="_blank"><b>Raw data</b></a> </div>
  
  #### And, raw data about activities for each drugs obtained after cURL queries:
  
-  <div> Ki values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_Ki.csv" target="_blank"><b>Ki</b></a> </div>
+  <div> Ki values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_Ki.csv" target="_blank"><b>Ki</b></a> </div>
   
-  <div> IC50 values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/data_IC50.csv" target="_blank"><b>IC50</b></a> </div>
+  <div> IC50 values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_IC50.csv" target="_blank"><b>IC50</b></a> </div>
   
  #### Finally, we provide a Supplementary table with each filtered compound-target pair and their respective Ki and IC50 values: 
  
