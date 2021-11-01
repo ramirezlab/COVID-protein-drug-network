@@ -28,9 +28,9 @@ Four datasets were used to retrive the information:
  
  #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
 
-  <div align="justify"> Firstly, data about compounds and targets were retrieve from ChEMBL database following the pipeline described in <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.</div>
+  <div align="justify"> Firstly, data about compounds and targets were retrieve from ChEMBL database following the pipeline described in <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/ChEMBL_compounds_targets.ipynb" target="_blank"><b>Here</b></a>.</div>
  
-  <div align="justify"> Secondly, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.</div>
+  <div align="justify"> Secondly, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/Filtering_drugs.ipynb" target="_blank"><b>Here</b></a>.</div>
  
  #### Addionaly, we provied raw datafiles for compounds present in ChEMBL SARS-CoV-2 section.
  
