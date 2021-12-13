@@ -7,22 +7,21 @@ Authors: Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth Gon
  
 
 ## About this repository
-<div align="justify">To support our analysis we have reported the steps to obtain the information from Chembl databases as well as its processing. In addition you will find information about the further analysis of the networks using R.</div>
+<div align="justify">To support our analysis we have reported the steps to obtain the information from ChEMBL database as well as its processing. In addition you will find information about the further analysis of the networks using R.</div>
  
  
  ## Retrieve Protein-Protein Interactions data
 
-Four datasets were used to retrive the information:
+Three datasets were used to retrieve the information:
    
-    1.-
+1.- <a href= "https://ppi.zoiclabs.io/#/" target="_blank"><b>Krogan’s Lab website</b></a>.
     
-    2.-
+2.- <a href= "https://covid19interactome.org/" target="_blank"><b>BioID-based interactome of the SARS-CoV-2 proteome</b></a>.
     
-    3.-
+3.-  SARS-CoV-2 proteins in <a href= "https://covid-19.uniprot.org" target="_blank"><b>Uniprot</b></a> database as September 2021.
     
-    4.-
     
-<div align="justify">Then, a pipeline using [Knime analytics platform](https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
+<div align="justify">Then, a pipeline using [Knime analytics platform] (https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
  
  ## Retrieve Compounds and Target from Chembl related to SARS-COV-2 data.
  
