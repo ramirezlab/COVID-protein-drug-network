@@ -10,7 +10,7 @@ Authors: Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth Gon
 <div align="justify">To support our analysis we have reported the steps to obtain the information from ChEMBL database as well as its processing. In addition you will find information about the further analysis of the networks using R.</div>
  
  
- ## Data Retrieve of Protein-Protein Interactions
+ ## Data Retrieval of Protein-Protein Interactions
 
 Three datasets were used to retrieve the information:
    
@@ -23,7 +23,7 @@ Three datasets were used to retrieve the information:
     
 <div align="justify">Then, a pipeline using <a href= "https://www.knime.com/str" target="_blank"><b>[Knime analytics platform]</b></a> was built to obtain human protein-protein interaction from the <a href= "https://string-db.org/" target="_blank"><b>[STRING]</b></a> database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
  
- ## Data Retrieve of Compounds and Target from ChEMBL related to SARS-COV-2
+ ## Data Retrieval of Compounds and Target from ChEMBL related to SARS-COV-2
  
  #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
 
