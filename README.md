@@ -23,7 +23,7 @@ Three datasets were used to retrieve the information:
     
 <div align="justify">Then, a pipeline using [Knime analytics platform] (https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
  
- ## Data Retrieve of Compounds and Target from Chembl related to SARS-COV-2
+ ## Data Retrieve of Compounds and Target from ChEMBL related to SARS-COV-2
  
  #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
 
