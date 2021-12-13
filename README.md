@@ -62,19 +62,9 @@ Three datasets were used to retrieve the information:
  ## Citation
  
 
-    @article{Alegría-Arcos,
-      author = {Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez},
-      title = {Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network. },
-      doi = {XX.XX/sXX-0Xx-00XX0-X},
-      url = {https://doi.org/XX},
-      year  = {20xx},
-      month = {x},
-      publisher = {xx},
-      volume = {x},
-      number = {x},
-      journal = {xxx}
-    }
+Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez (2021) Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network.
+     
 
-## Contacts
+## Contact
 
-If you have any questions or comments, please feel free to email David Ramirez (dramirezs[at]udec[dot]cl).
+If you have any questions or comments, please feel free to email David Ramirez (dramirezs@udec.cl).
