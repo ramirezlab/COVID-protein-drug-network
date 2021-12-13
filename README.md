@@ -21,24 +21,19 @@ Three datasets were used to retrieve the information:
 3.-  SARS-CoV-2 proteins in <a href= "https://covid-19.uniprot.org" target="_blank"><b>UniProt</b></a> database as September 2021.
     
     
-<div align="justify">Then, a pipeline using [Knime analytics platform] (https://www.knime.com/str) was built to obtain human protein-protein interaction from the [STRING](https://string-db.org/) database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
+<div align="justify">Then, a pipeline using <a href= "https://www.knime.com/str" target="_blank"><b>[Knime analytics platform]</b></a> was built to obtain human protein-protein interaction from the <a href= "https://string-db.org/" target="_blank"><b>[STRING]</b></a> database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
  
  ## Data Retrieve of Compounds and Target from ChEMBL related to SARS-COV-2
  
  #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
 
-  <div align="justify"> Firstly, data about compounds and targets were retrieve from ChEMBL database following the pipeline described <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/ChEMBL_compounds_targets.ipynb" target="_blank"><b>here</b></a>.</div>
+ + <div align="justify"> Firstly, data about compounds and targets were retrieve from ChEMBL database following the pipeline described <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/ChEMBL_compounds_targets.ipynb" target="_blank"><b>here</b></a>.</div>
+ + <div align="justify"> Secondly, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/Filtering_drugs.ipynb" target="_blank"><b>here</b></a>.</div>
  
-  <div align="justify"> Secondly, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/Filtering_drugs.ipynb" target="_blank"><b>here</b></a>.</div>
+ #### <div> Addionaly, we provided <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/chembl_covid_raw.csv" target="_blank"><b>raw data files</b></a> for compounds present in ChEMBL SARS-CoV-2 section, and raw data about activities for each drug obtained after the cURL queries: </div>
  
- #### <div> Addionaly, we provided <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/chembl_covid_raw.csv" target="_blank"><b>raw data file</b></a> for compounds present in ChEMBL SARS-CoV-2 section.</div> 
-  
- 
- #### And also, raw data about activities for each drug obtained after the cURL queries:
- 
-  <div> Ki values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_Ki.csv" target="_blank"><b>Ki</b></a> </div>
-  
-  <div> IC50 values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_IC50.csv" target="_blank"><b>IC50</b></a> </div>
+  + <div> Ki values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_Ki.csv" target="_blank"><b>Ki</b></a> </div>
+  + <div> IC50 values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_IC50.csv" target="_blank"><b>IC50</b></a> </div>
   
  #### Finally, here we provide a Supplementary Table with each filtered compound-target pair, as well as their respective Ki and IC50 values: 
  
