@@ -1,4 +1,4 @@
-# Graph Theory on Network Analysis
+# Welcome to the Ramirez Lab Wiki - Graph Theory on Network Analysis
 
 <div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a disconnection of components when eliminated. For further information about Topological network analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
 
