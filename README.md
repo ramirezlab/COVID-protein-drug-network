@@ -21,7 +21,7 @@ Three datasets were used to retrieve the information:
 3.-  SARS-CoV-2 proteins in <a href= "https://covid-19.uniprot.org" target="_blank"><b>UniProt</b></a> database as September 2021.
     
     
-<div align="justify">Then, a pipeline using <a href= "https://www.knime.com/str" target="_blank"><b>[Knime analytics platform]</b></a> was built to obtain human protein-protein interaction from the <a href= "https://string-db.org/" target="_blank"><b>[STRING]</b></a> database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
+<div align="justify">Then, a pipeline using <a href= "https://www.knime.com" target="_blank"><b>[Knime analytics platform]</b></a> was built to obtain human protein-protein interaction from the <a href= "https://string-db.org/" target="_blank"><b>[STRING]</b></a> database for each protein obtained in the three datasets previously mentioned. This Knime pipeline can be accesed <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/Files/STRING-interactions.knwf" target="_blank"><b>here</b></a>.</div>
  
  ## Data Retrieval of Compounds and Target from ChEMBL related to SARS-COV-2
  
