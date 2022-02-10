@@ -45,6 +45,10 @@ Three datasets were used to retrieve the information:
  
 <div align="justify">For all the network analysys we used Graph Theory.
 <a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis" target="_blank"><b>Here</b></a> we report the R pipeline, which we use for all reported analyses.  This pipeline can be applied to other networks if required.</div>
+
+## Cytoscape Files
+ 
+<div align="justify">Both PPI and DPI network files are available for download in the <a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/Files" target="_blank"><b>Files Folder</b></a>.</div>
  
 ### Supplementary Information
 
