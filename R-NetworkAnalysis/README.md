@@ -1,6 +1,6 @@
 # Welcome to the Ramirez Lab Wiki - Graph Theory on Network Analysis
 
-<div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a disconnection of components when eliminated. For further information about Topological network analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
+<div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "relevance" of each node in a protein-protein or drug-protein interaction network in terms of its connections. We are also going to conduct a cut analysis, in order to see which nodes on a network generate a disconnection of components when eliminated. For further information about Topological network analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
 
 
 ## Requirements
@@ -191,7 +191,7 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy
 ```
 
 
-Next we classify the vertex with values over the 50%, and save a copy of the original vertex
+Next we classify the vertex with values over the 50% for Degree, centrality, Betweenness and PageRank, and the top 1% for Closeness (because this parameter had a great number of top proteins using a 50% threshold). then we save a copy of the original vertex.
 
 ```R
     Vertex$N <- c(1:length(Vertex$Degree))
@@ -210,7 +210,7 @@ Next we classify the vertex with values over the 50%, and save a copy of the ori
     Best_PageRank <- as.list(as.character(row.names(Vertex[Vertex$PageRankCat == "yes",])))
 ```
 
-The final table for our vertex looks like this:
+The head of the final table for our vertex will show with this command:
 
 ```R
     head(Vertex, 5)
@@ -235,7 +235,7 @@ Let's see the behavior of all the topological index that we have
 
 
 ### Set Theory and Venn Diagrams.
-We start by creating sets with the top 50% in each index, and the look for the intersections.
+We start by creating sets with the top 50% in each topological parameter, and then we will look for the intersections between parameters.
 
 
 ```R
@@ -314,7 +314,9 @@ Next we will see the size of the intersections in a bar diagram
 
 ## Cut Analysis
 
-First we are going to generate a new variable for our data, then we are going to consider the vertex for each topological parameter.
+With this analysis we want to identify those proteins which have a key role in network connection given their location and first neighbour proteins.
+The cut analysis will allow to identify the proteins which generate at least 2 new components in the network when they are removed.
+First, we are going to generate a new variable for our data, then we are going to consider the vertex for each topological parameter.
  
  ```R
     g1 <- graph_from_data_frame(Dat, directed = FALSE)
@@ -328,7 +330,7 @@ First we are going to generate a new variable for our data, then we are going to
     Vertex$N <- c(1:length(Vertex$Degree))
 ```    
 
-We will consider the top 50% nodes for degree, centrality, betweenness and PageRank, an the top 1% for closeness given the nature of this parameter.
+Now, we will consider the top 50% nodes for degree, centrality, betweenness and PageRank, an the top 1% for closeness given the nature of this parameter.
 
 ```R
     Vertex$DegreeCat <- ifelse(Vertex$Degree < 0.5, "no", "yes")
@@ -340,7 +342,7 @@ We will consider the top 50% nodes for degree, centrality, betweenness and PageR
     V_Original <- Vertex
 ```
 
-Finally, this fragment of code will generate a list with the nodes that disconnect the graogh and the number of components that its elimination would generate in the newtwork. 
+Finally, this fragment of code will generate a list of the proteins that disconnect the graph, and the number of components that its elimination would generate in the newtwork. 
 
 ```R
     dg <- decompose.graph(g1)
@@ -360,7 +362,7 @@ Finally, this fragment of code will generate a list with the nodes that disconne
     length(lista)
 ```
 
-This results in 240 nodes which disconnect the graph.
+Using our dataset, this last fragment of code results in 240 nodes which disconnect the graph.
 
 ## References
 + Scardoni G, Laudanna C, Tosadori G, Fabbri F, Faizaan M. (2009) Analyzing biological network parameters with CentiScaPe.  Bioinformatics. doi:10.1093/bioinformatics/btp517
