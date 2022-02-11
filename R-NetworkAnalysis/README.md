@@ -343,7 +343,7 @@ Now, we will consider the top 50% nodes for degree, centrality, betweenness and 
     V_Original <- Vertex
 ```
 
-Finally, this fragment of code will generate a list of the proteins that disconnect the graph, and the number of components that its elimination would generate in the newtwork. 
+Finally, this fragment of code will generate a list of the proteins that disconnect the main graph, and the number of components that its elimination would generate in the network. 
 
 ```R
     dg <- decompose.graph(g1)
