@@ -5,7 +5,7 @@
 
 ## Requirements
 + R v4.1.1 or more recent.
-+ Input file available in media folder: InputDPI.xlsx
++ Input file available in media folder: InputPPI.xlsx
 
 ## Topological Analysis
 
