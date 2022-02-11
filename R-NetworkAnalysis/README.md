@@ -188,6 +188,7 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy
 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
+    ## warning
 ```
 
 
