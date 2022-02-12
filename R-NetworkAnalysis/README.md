@@ -85,8 +85,6 @@ Once the multiplot function is defined, we are going to upload the input file th
     Dat <- read_excel("your_file_location.xlsx")
     names(Dat)[1]<- "X";  
     names(Dat)[2]<- "Y"; 
-    names(Dat)[3]<- "weight";
-    Dat$weight <- as.numeric(Dat$weight)*100
     Dat$Prot_A <- NULL; Dat$Prot_B<-NULL
 ```
 
@@ -96,7 +94,7 @@ If you load the data correctly, the data frame looks like the following table, w
 ```R
     head(Dat, 5)
 ```
-
+<img src=".\media\head.png" style="width:600px;" />
 
 The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one.
 
