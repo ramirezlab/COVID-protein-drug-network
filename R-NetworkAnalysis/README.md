@@ -94,7 +94,7 @@ If you load the data correctly, the data frame looks like the following table, w
 ```R
     head(Dat, 5)
 ```
-<img src=".\media\head1.png" style="width:600px;" />
+<img src=".\media\head01.png" style="width:400px;" />
 
 The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one.
 
@@ -217,7 +217,7 @@ The head of the final table for our vertex will appear with this command:
 ```R
     head(Vertex, 5)
 ```
-<img src=".\media\head2.png" style="width:600px;" />
+<img src=".\media\head02.png" style="width:400px;" />
 
 Let's see the behavior of all the topological indexes that we have
 
