@@ -94,7 +94,7 @@ If you load the data correctly, the data frame looks like the following table, w
 ```R
     head(Dat, 5)
 ```
-<img src=".\media\head.png" style="width:600px;" />
+<img src=".\media\head1.png" style="width:600px;" />
 
 The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one.
 
@@ -182,11 +182,14 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24%5Csigm
 
 <img src="https://render.githubusercontent.com/render/math?math=%24%0AC(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csum_y%20d(x%2Cy)%7D%0A%24"   style="width:150px;" />
 
-Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy)%24"> is the distance between the vertices **x,y**. A high closeness can be thought of as an easy access to all nodes. 
+Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy)%24"> is the distance between the vertices **x,y**. A high closeness can be thought of as an easy access to all nodes. A warning will appear, but it would not affect the code.
 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
-    ## warning
+    
+    Warning message:
+    In closeness(g) :
+  At centrality.c:2874 :closeness centrality is not well-defined for disconnected graphs
 ```
 
 
@@ -209,13 +212,14 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy
     Best_PageRank <- as.list(as.character(row.names(Vertex[Vertex$PageRankCat == "yes",])))
 ```
 
-The head of the final table for our vertex will show with this command:
+The head of the final table for our vertex will appear with this command:
 
 ```R
     head(Vertex, 5)
 ```
+<img src=".\media\head2.png" style="width:600px;" />
 
-Let's see the behavior of all the topological index that we have
+Let's see the behavior of all the topological indexes that we have
 
 ```R
     Vertex <- Vertex[order(Vertex$Degree, decreasing = FALSE), ]
@@ -277,7 +281,7 @@ Next we will see the size of the intersections in a bar diagram
      Centrality = length(isect$Centrality),
      #  Degree =length(isect$Degree),
      PageRank = length(isect$PageRank),
-     Closeness =length(isect$Closeness), 
+     # Closeness =length(isect$Closeness), 
      Betweenness =length(isect$Betweenness),
      # "Degree&Centrality" =  length(isect$`Degree:Centrality`),
      "Degree&PageRank" =  length(isect$`Degree:PageRank`),
@@ -309,7 +313,7 @@ Next we will see the size of the intersections in a bar diagram
      upset(fromExpression(input))
 ```
 
-<img src=".\media\Rplot4.png" style="width:400px;" />
+<img src=".\media\Rplot-is.png" style="width:400px;" />
 
 ## Cut Analysis
 
