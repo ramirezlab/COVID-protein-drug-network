@@ -5,7 +5,7 @@
 
 ## Requirements
 + R v4.1.1 or more recent.
-+ Input file available in media folder: PPI-Input.xlsx
++ Input file available in media folder: Input-DPI.xlsx
 
 ## Topological Analysis
 
@@ -190,7 +190,7 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy
 ```
 
 
-Next we classify the vertex with values over the 50% for Degree, centrality, Betweenness and PageRank, and the top 1% for Closeness (because this parameter had a great number of top proteins using a 50% threshold). then we save a copy of the original vertex.
+<div align="justify">Next we classify the vertex with values over the 50% for Degree, centrality, Betweenness and PageRank, and the top 1% for Closeness (because this parameter had a great number of top proteins using a 50% threshold). then we save a copy of the original vertex.</div>
 
 ```R
     Vertex$N <- c(1:length(Vertex$Degree))
@@ -313,37 +313,10 @@ Next we will see the size of the intersections in a bar diagram
 
 ## Cut Analysis
 
-With this analysis we want to identify those proteins which have a key role in network connection given their location and first neighbour proteins.
-The cut analysis will allow to identify the proteins which generate at least 2 new components in the network when they are removed.
-First, we are going to generate a new variable for our data, then we are going to consider the vertex for each topological parameter.
- 
- ```R
+<div align="justify">With this analysis we want to identify those proteins which have a key role in network connection given their location and first neighbour proteins. The cut analysis will allow to identify the proteins which generate at least 2 new components in the network when they are removed. Using this fragment of code we will generate a list of those proteins that disconnect the main graph, and the number of components that its elimination would generate in the network.</div> 
+
+```R
     g1 <- graph_from_data_frame(Dat, directed = FALSE)
-    Vertex <- as.data.frame(degree(g1))
-    Vertex$Degree <- normalize(as.numeric(Vertex$`degree(g1)`))
-    Vertex$`degree(g1)` <- NULL
-    Vertex$Centrality <- eigen_centrality(g1)$vector
-    Vertex$Betweenness <- normalize(betweenness(g1, normalized = TRUE ))
-    Vertex$PageRank <- normalize(page_rank(g1)$vector)
-    Vertex$Closeness <- normalize(closeness(g1))
-    Vertex$N <- c(1:length(Vertex$Degree))
-```    
-
-Now, we will consider the top 50% nodes for degree, centrality, betweenness and PageRank, an the top 1% for closeness given the nature of this parameter.
-
-```R
-    Vertex$DegreeCat <- ifelse(Vertex$Degree < 0.5, "no", "yes")
-    Vertex$CentralityCat <- ifelse(Vertex$Centrality < 0.5, "no", "yes")
-    Vertex$BetweennessCat <- ifelse(Vertex$Betweenness < 0.5, "no", "yes")
-    Vertex$PageRankCat <- ifelse(Vertex$PageRank < 0.5, "no", "yes")
-    Vertex$ClosenessCat <- ifelse(Vertex$Closeness < 0.99, "no", "yes")
-    Vertex1 <- Vertex
-    V_Original <- Vertex
-```
-
-Finally, this fragment of code will generate a list of the proteins that disconnect the main graph, and the number of components that its elimination would generate in the network. 
-
-```R
     dg <- decompose.graph(g1)
     g <- dg[[1]]
     cohesion(g)
