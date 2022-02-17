@@ -85,7 +85,6 @@ Once the multiplot function is defined, we are going to upload the input file th
     Dat <- read_excel("your_file_location.xlsx")
     names(Dat)[1]<- "X";  
     names(Dat)[2]<- "Y"; 
-    Dat$Prot_A <- NULL; Dat$Prot_B<-NULL
 ```
 
 If you load the data correctly, the data frame looks like the following table, were each row is a connection between the two proteins in each column.
@@ -182,14 +181,14 @@ Where <img src="https://render.githubusercontent.com/render/math?math=%24%5Csigm
 
 <img src="https://render.githubusercontent.com/render/math?math=%24%0AC(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csum_y%20d(x%2Cy)%7D%0A%24"   style="width:150px;" />
 
-Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy)%24"> is the distance between the vertices **x,y**. A high closeness can be thought of as an easy access to all nodes. A warning will appear, but it would not affect the code.
-
+Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy)%24"> is the distance between the vertices **x,y**. A high closeness can be thought of as an easy access to all nodes. This warning will appear but it would not affect the code: 
+   "Warning message:
+    In closeness(g) :
+    At centrality.c:2874 :closeness centrality is not well-defined for disconnected graphs"
+ 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
     
-    Warning message:
-    In closeness(g) :
-  At centrality.c:2874 :closeness centrality is not well-defined for disconnected graphs
 ```
 
 
