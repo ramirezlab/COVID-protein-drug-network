@@ -34,51 +34,7 @@ The first step is installing in R the packages that are needed as well as loadin
     library(readxl)
 ```
 
-Now, that the libraries are loaded, we will define a multiplot function that is going to be used to visualize the network in our file.
-
-```R
-    multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
-    library(grid)
-  
-    # Make a list from the ... arguments and plotlist
-      plots <- c(list(...), plotlist)
-  
-      numPlots = length(plots)
-  
-     # If layout is NULL, then use 'cols' to determine layout
-       if (is.null(layout)) {
-        # Make the panel
-        # ncol: Number of columns of plots
-        # nrow: Number of rows needed, calculated from # of cols
-        layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
-                      ncol = cols, nrow = ceiling(numPlots/cols))
-        }
-  
-       if (numPlots==1) {
-        print(plots[[1]])
-    
-      } else {
-      # Set up the page
-       grid.newpage()
-       pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
-    
-       # Make each plot, in the correct location
-       for (i in 1:numPlots) {
-       # Get the i,j matrix positions of the regions that contain this subplot
-       matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
-      
-      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
-                                      layout.pos.col = matchidx$col))
-         }
-       }
-     }
-     ###################################################################
-     normalize <- function(x) {                                        # 
-       return ((x - min(x)) / (max(x) - min(x)))                 }     #
-     ###################################################################
-```
-
-Once the multiplot function is defined, we are going to upload the input file that has the proteins and the connections.
+Now, that the libraries are loaded, we are going to upload the input file in which we can find the connections between proteins and drugs:
 
 
 ```R    
