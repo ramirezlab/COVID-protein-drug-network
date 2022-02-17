@@ -172,7 +172,7 @@ The head of the final table for our vertex will appear with this command:
 ```R
     head(Vertex, 5)
 ```
-<img src=".\media\head02.png" style="width:400px;" />
+<img src=".\media\image.png" style="width:400px;" />
 
 Let's see the behavior of all the topological indexes that we have
 
