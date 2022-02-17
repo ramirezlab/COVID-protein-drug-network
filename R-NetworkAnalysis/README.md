@@ -268,10 +268,6 @@ We start by creating sets with the top 50% in each topological parameter, and th
 <img src=".\media\Rplot30.png" style="width:400px;" />
 
 
-```R
-    isect <- attr(venn(x, intersection=TRUE), "intersection")
-```
-
 Next we will see the size of the intersections in a bar diagram
 
 
