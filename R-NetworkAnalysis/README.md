@@ -219,6 +219,7 @@ We start by creating sets with the top 50% in each topological parameter, and th
     cat.default.pos = "outer",
     cat.dist = c(0.05, 0.08, 0.08, 0.06, 0.08)
     )
+isect <- attr(venn(x, intersection=TRUE), "intersection")
 ```
 
 <img src=".\media\Rplot30.png" style="width:400px;" />
