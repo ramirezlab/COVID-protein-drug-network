@@ -60,7 +60,8 @@ Three datasets were used to retrieve the information:
  ## Citation
  
 
-Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, Janneth González, Germán Combariza and David Ramírez (2021) Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network.
+Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, German Combariza, Janneth González, Carmen Gil, Ana Martinez and David Ramírez
+(2022) Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network.
      
 
 ## Contact
