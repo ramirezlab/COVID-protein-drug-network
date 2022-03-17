@@ -263,6 +263,8 @@ Next we will see the size of the intersections in a bar diagram
      "Degree&Centrality&PageRank&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Centrality:Betweenness:PageRank`)
     )
      upset(fromExpression(input))
+     
+     print(isect)
 ```
 
 <img src=".\media\Rplot-is.png" style="width:400px;" />
