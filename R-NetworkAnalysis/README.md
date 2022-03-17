@@ -269,6 +269,8 @@ Next we will see the size of the intersections in a bar diagram
 
 <img src=".\media\Rplot-is.png" style="width:400px;" />
 
+<div align="justify">Note: if this intersection diagram is needed with another input dataset, it is key to edit the intersections to plot accordingly with the insersections of the dataset, which can be seen with the code line: print(isect). This is because if there are not intersection in your results, the code will plot a bar diagram with value=1.</div>
+
 ## Cut Analysis
 
 <div align="justify">With this analysis we want to identify those proteins which have a key role in network connection given their location and first neighbour proteins. The cut analysis will allow to identify the proteins which generate at least 2 new components in the network when they are removed. Using this fragment of code we will generate a list of those proteins that disconnect the main graph, and the number of components that its elimination would generate in the network.</div> 
