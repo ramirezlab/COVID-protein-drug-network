@@ -80,6 +80,9 @@ Now, to obtain more information about the resulting graph, such as data that can
        cg <- dg[[i]]
        print(paste("Component", i, "Size:", length(degree(cg)) ) )
      }
+     
+     normalize <- function(x) {                                   
+  return ((x - min(x)) / (max(x) - min(x)))                 }
 ```
 
 Next we compute the following indices of each vertex, we will normalize our values, that means we will put all our values between 0 and 1.
