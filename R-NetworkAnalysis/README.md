@@ -53,7 +53,7 @@ If you load the data correctly, the data frame looks like the following table, w
 ```R
     head(Dat, 5)
 ```
-<img src=".\media\head01.png" style="width:400px;" />
+<img src=".\media\P0.jpg" style="width:400px;" />
 
 The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one.
 
@@ -63,7 +63,7 @@ The next step is to create the Graph that we are going to analyze, after you run
     autograph(g)
 ```
 
-<img src=".\media\Rplot1.png" style="width:600px;" />
+<img src=".\media\P1.jpeg" style="width:600px;" />
  
 
 Now, to obtain more information about the resulting graph, such as data that can be used to calculate some topological parameters like degree, centrality, betweenness, Pagerank, and closeness.
@@ -179,7 +179,7 @@ The head of the final table for our vertex will appear with this command:
 ```R
     head(Vertex, 5)
 ```
-<img src=".\media\image.png" style="width:400px;" />
+<img src=".\media\P2.jpg" style="width:400px;" />
 
 Let's see the behavior of all the topological indexes that we have
 
@@ -195,7 +195,7 @@ Let's see the behavior of all the topological indexes that we have
       labs(title="All variables")
 ```
 
-<img src=".\media\Rplot2.png" style="width:400px;" />
+<img src=".\media\P3.jpeg" style="width:400px;" />
 
 
 
@@ -229,7 +229,7 @@ We start by creating sets with the top 50% in each topological parameter, and th
 isect <- attr(venn(x, intersection=TRUE), "intersection")
 ```
 
-<img src=".\media\Rplot30.png" style="width:400px;" />
+<img src=".\media\P4.jpeg" style="width:400px;" />
 
 
 Next we will see the size of the intersections in a bar diagram
@@ -274,7 +274,7 @@ upset(fromExpression(input))
 print(isect)
 ```
 
-<img src=".\media\Rplot-is.png" style="width:400px;" />
+<img src=".\media\P5.jpeg" style="width:400px;" />
 
 <div align="justify">Note: if this intersection diagram is needed with another input dataset, it is key to edit the intersections to plot accordingly with the insersections of the dataset, which can be seen with the code line: print(isect). This is because if there are not intersection in your results, the code will plot a bar diagram with value=1.</div>
 
@@ -301,7 +301,7 @@ print(isect)
     length(lista)
 ```
 
-Using our dataset, this last fragment of code results in 240 nodes which disconnect the graph.
+Using our dataset, this last fragment of code results in 24 nodes which disconnect the graph.
 
 
 
