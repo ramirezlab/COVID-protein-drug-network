@@ -195,7 +195,7 @@ Let's see the behavior of all the topological indexes that we have
       labs(title="All variables")
 ```
 
-<img src=".\media\P3.jpeg" style="width:400px;" />
+<img src=".\media\P3.jpeg" style="width:500px;" />
 
 
 
@@ -229,7 +229,7 @@ We start by creating sets with the top 50% in each topological parameter, and th
 isect <- attr(venn(x, intersection=TRUE), "intersection")
 ```
 
-<img src=".\media\P4.jpeg" style="width:400px;" />
+<img src=".\media\P4.jpeg" style="width:600px;" />
 
 
 Next we will see the size of the intersections in a bar diagram
@@ -274,7 +274,7 @@ upset(fromExpression(input))
 print(isect)
 ```
 
-<img src=".\media\P5.jpeg" style="width:400px;" />
+<img src=".\media\P5.jpeg" style="width:600px;" />
 
 <div align="justify">Note: if this intersection diagram is needed with another input dataset, it is key to edit the intersections to plot accordingly with the insersections of the dataset, which can be seen with the code line: print(isect). This is because if there are not intersection in your results, the code will plot a bar diagram with value=1.</div>
 
