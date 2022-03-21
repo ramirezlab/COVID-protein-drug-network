@@ -6,7 +6,8 @@
 ## Requirements
 + R v4.1.1 or more recent.
 
-### Protein-Protein Interaction Network
+
+# Protein-Protein Interaction Network
 + Input file available in the Networks-Inputs folder: PPI-Input.xlsx
 
 
@@ -198,7 +199,7 @@ Let's see the behavior of all the topological indexes that we have
 
 
 
-### Set Theory and Venn Diagrams.
+### Set Theory and Venn Diagrams
 We start by creating sets with the top 50% in each topological parameter, and then we will look for the intersections between parameters.
 
 
@@ -235,42 +236,42 @@ Next we will see the size of the intersections in a bar diagram
 
 
 ```R
-     input <- c(
-     Centrality = length(isect$Centrality),
-     #  Degree =length(isect$Degree),
-     PageRank = length(isect$PageRank),
-     # Closeness =length(isect$Closeness), 
-     Betweenness =length(isect$Betweenness),
-     # "Degree&Centrality" =  length(isect$`Degree:Centrality`),
-     "Degree&PageRank" =  length(isect$`Degree:PageRank`),
-     "Degree&Closeness" =  length(isect$`Closeness:Degree`),
-     "Degree&Betweenness" =  length(isect$`Degree:Betweenness`),
-     "Centrality&PageRank" =  length(isect$`PageRank:Centrality`),
-     "Centrality&Closeness" =  length(isect$`Closeness:Centrality`),
-     "Centrality&Betweenness" =  length(isect$`Betweenness:Centrality`),
-     "PageRank&Closeness" =  length(isect$`Closeness:PageRank`),
-     "PageRank&Betweenness" =  length(isect$`Betweenness:PageRank`),
-     "Betweenness&Closeness" =  length(isect$`Closeness:Betweenness`),
-     "Degree&Centrality&PageRank" =  length(isect$`Degree:Centrality:PageRank`),
-     "Degree&Centrality&Closeness" =  length(isect$`Closeness:Degree:Centrality`),
-     "Degree&Centrality&Betweenness" =  length(isect$`Degree:Centrality:Betweenness`),
-     "Degree&PageRank&Closeness" =  length(isect$`Closeness:Degree:PageRank`),
-     "Degree&PageRank&Betweenness" =  length(isect$`Degree:Betweenness:PageRank`),
-     "Degree&Closeness&Betweenness" =  length(isect$`Degree:Closeness:Betweenness`),
-     "Centrality&PageRank&Closeness" =  length(isect$`PageRank:Centrality:Closeness`),
-     "Centrality&PageRank&Betweenness" =  length(isect$`PageRank:Centrality:Betweenness`),
-     "Centrality&Closeness&Betweenness" =  length(isect$`Closeness:Centrality:Betweenness`),
-     "PageRank&Closeness&Betweenness" =  length(isect$`Closeness:Betweenness:PageRank`),
-     "Degree&Centrality&PageRank&Closeness" =  length(isect$`Closeness:Degree:Centrality:PageRank`), 
-     "Degree&Centrality&PageRank&Betweenness" =  length(isect$`Degree:Centrality:Betweenness:PageRank`),
-     "Centrality&PageRank&Betweenness&Closeness" =  length(isect$`Centrality:PageRank:Betweenness:Closeness`),
-     "Degree&PageRank&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Betweenness:PageRank`),
-     #  "Degree&Centrality&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Centrality:Betweenness`),
-     "Degree&Centrality&PageRank&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Centrality:Betweenness:PageRank`)
-    )
-     upset(fromExpression(input))
-     
-     print(isect)
+  input <- c(
+  Centrality = length(isect$Centrality),
+  #  Degree =length(isect$Degree),
+  PageRank = length(isect$PageRank),
+  Closeness =length(isect$Closeness), 
+  # Betweenness =length(isect$Betweenness),
+  # "Degree&Centrality" =  length(isect$`Degree:Centrality`),
+  "Degree&PageRank" =  length(isect$`Degree:PageRank`),
+  #"Degree&Closeness" =  length(isect$`Closeness:Degree`),
+  #"Degree&Betweenness" =  length(isect$`Degree:Betweenness`),
+  #"Centrality&PageRank" =  length(isect$`PageRank:Centrality`),
+  #"Centrality&Closeness" =  length(isect$`Closeness:Centrality`),
+  #"Centrality&Betweenness" =  length(isect$`Betweenness:Centrality`),
+  #"PageRank&Closeness" =  length(isect$`Closeness:PageRank`),
+  "PageRank&Betweenness" =  length(isect$`Betweenness:PageRank`),
+  "Betweenness&Closeness" =  length(isect$`Closeness:Betweenness`),
+  #"Degree&Centrality&PageRank" =  length(isect$`Degree:Centrality:PageRank`),
+  #"Degree&Centrality&Closeness" =  length(isect$`Closeness:Degree:Centrality`),
+  #"Degree&Centrality&Betweenness" =  length(isect$`Degree:Centrality:Betweenness`),
+  #"Degree&PageRank&Closeness" =  length(isect$`Closeness:Degree:PageRank`),
+  "Degree&PageRank&Betweenness" =  length(isect$`Degree:Betweenness:PageRank`),
+  #"Degree&Closeness&Betweenness" =  length(isect$`Degree:Closeness:Betweenness`),
+  #"Centrality&PageRank&Closeness" =  length(isect$`PageRank:Centrality:Closeness`),
+  #"Centrality&PageRank&Betweenness" =  length(isect$`PageRank:Centrality:Betweenness`),
+  #"Centrality&Closeness&Betweenness" =  length(isect$`Closeness:Centrality:Betweenness`),
+  #"PageRank&Closeness&Betweenness" =  length(isect$`Closeness:Betweenness:PageRank`),
+  #"Degree&Centrality&PageRank&Closeness" =  length(isect$`Closeness:Degree:Centrality:PageRank`), 
+  "Degree&Centrality&PageRank&Betweenness" =  length(isect$`Degree:Centrality:Betweenness:PageRank`),
+  #"Centrality&PageRank&Betweenness&Closeness" =  length(isect$`Centrality:PageRank:Betweenness:Closeness`),
+  "Degree&PageRank&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Betweenness:PageRank`),
+  #  "Degree&Centrality&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Centrality:Betweenness`),
+  "Degree&Centrality&PageRank&Betweenness&Closeness" =  length(isect$`Closeness:Degree:Centrality:Betweenness:PageRank`)
+)
+upset(fromExpression(input))
+
+print(isect)
 ```
 
 <img src=".\media\Rplot-is.png" style="width:400px;" />
@@ -304,7 +305,9 @@ Using our dataset, this last fragment of code results in 240 nodes which disconn
 
 
 
-### Drug-Protein Interaction Network
+
+
+# Drug-Protein Interaction Network
 + Input file available in the Networks-Inputs folder: Input-DPI.xlsx
 
 ## Topological Analysis
