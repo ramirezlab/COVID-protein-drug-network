@@ -48,7 +48,7 @@ Three datasets were used to retrieve the information:
 
 ## Cytoscape Files
  
-<div align="justify">Both PPI and DPI network files are available for download in the <a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/Files" target="_blank"><b>Files Folder</b></a>.</div>
+<div align="justify">Both PPI and DPI network files are available for download in the <a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/Cytoscape_Sessions" target="_blank"><b>Cystoscape_Sessions</b></a>.</div>
  
 ### Supplementary Information
 
