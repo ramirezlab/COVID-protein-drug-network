@@ -25,12 +25,12 @@ Three datasets were used to retrieve the information:
  
  ## Data Retrieval of Compounds and Target from ChEMBL related to SARS-COV-2
  
- #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset.
+ #### We generated two jupyter notebooks that can be followed to obtain the necessary data to replicate our dataset:
 
- + <div align="justify"> Firstly, data about compounds and targets were retrieve from ChEMBL database following the pipeline described <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/ChEMBL_compounds_targets.ipynb" target="_blank"><b>here</b></a>.</div>
- + <div align="justify"> Secondly, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/Filtering_drugs.ipynb" target="_blank"><b>here</b></a>.</div>
+ + <div align="justify"> First, data about compounds and targets were retrieved from ChEMBL database following the pipeline described <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/ChEMBL_compounds_targets.ipynb" target="_blank"><b>here</b></a>.</div>
+ + <div align="justify"> Second, a pipeline to filter drugs based on activities values <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/Filtering_drugs.ipynb" target="_blank"><b>here</b></a>.</div>
  
- #### <div> Addionaly, we provided <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/chembl_covid_raw.csv" target="_blank"><b>raw data files</b></a> for compounds present in ChEMBL SARS-CoV-2 section, and raw data about activities for each drug obtained after the cURL queries: </div>
+ #### <div> Addionaly, here we provide <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/chembl_covid_raw.csv" target="_blank"><b>raw data files</b></a> for compounds present in ChEMBL SARS-CoV-2 section, and raw data about activities for each drug obtained after the cURL queries: </div>
  
   + <div> Ki values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_Ki.csv" target="_blank"><b>Ki</b></a> </div>
   + <div> IC50 values for each drug: <a href="https://github.com/ramirezlab/COVID-protein-drug-network/blob/main/ChEMBL_dataset/data_IC50.csv" target="_blank"><b>IC50</b></a> </div>
@@ -44,7 +44,7 @@ Three datasets were used to retrieve the information:
 ## Network Analysis
  
 <div align="justify">For all the network analyses we used Graph Theory.
-<a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis" target="_blank"><b>Here</b></a> we report the R pipeline, which we use for all reported analyses.  This pipeline can be applied to other networks if required.</div>
+<a href="https://github.com/ramirezlab/COVID-protein-drug-network/tree/main/R-NetworkAnalysis" target="_blank"><b>Here</b></a> we report the R pipeline used for all the reported analyses.  This pipeline can be applied to other networks as required.</div>
 
 ## Cytoscape Files
  
