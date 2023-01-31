@@ -60,8 +60,7 @@ Three datasets were used to retrieve the information:
  ## Citation
  
 
-Melissa Alegría-Arcos, Tábata Barbosa, Felipe Sepúlveda, German Combariza, Janneth González, Carmen Gil, Ana Martinez and David Ramírez
-(2022) Drug repurposing for COVID-19 based on protein-protein and drug-protein interaction network.
+Alegría-Arcos, M.; Barbosa, T.; Sepúlveda, F.; Combariza, G.; González, J.; Gil, C.; Martínez, A.; and Ramírez, D. Network pharmacology reveals multitarget mechanism of action of drugs to be repurposed for COVID-19. Frontiers in Pharmacology. 13:952192. DOI: 10.3389/fphar.2022.952192
      
 
 ## Contact
